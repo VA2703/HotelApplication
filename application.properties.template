@@ -1,0 +1,16 @@
+# application.properties.template
+
+# App Name
+spring.application.name=hotelbooking
+
+# MongoDB Configuration ✅
+spring.data.mongodb.uri=${MONGODB_URI}
+spring.data.mongodb.database=hotelbooking
+
+# Thymeleaf Configuration ✅
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.cache=false  # Disable cache for dev
+
+# Static Resources (CSS, JS, images)
+spring.web.resources.static-locations=classpath:/static/
